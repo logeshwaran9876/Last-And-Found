@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# 🔍 Lost & Found Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web app where users can report lost items and claim found ones. Built to help connect people with their missing stuff! 🧢📱🎒
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 📝 Report lost or found items
+- 🔍 Search items by category, location, or keywords
+- 📦 Image upload for items
+- 👤 User login and roles (admin/user)
+- 🛠 Admin panel for managing reports
+- 📬 Messaging/contact system for item return
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+**Frontend**
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Backend**
+- PHP
+- MySQL
+- REST API
 
-### `npm run build`
+**Tools**
+- Git & GitHub
+- XAMPP / WAMP (for local server)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🖼️ Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_Add some fire visuals here in the `/screenshots` folder_
 
-### `npm run eject`
+```bash
+📁 /screenshots
+   ├── home.png
+   ├── report.png
+   └── found.png
+📦 Installation Guide
+Clone the project:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/lost-and-found.git
+Move the folder to your XAMPP/WAMP htdocs directory.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Import the lost_found.sql file into your MySQL database:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+sql
+Copy
+Edit
+CREATE DATABASE lost_found;
+USE lost_found;
+-- then import the .sql file
+Start Apache and MySQL via XAMPP.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Open your browser:
 
-## Learn More
+arduino
+Copy
+Edit
+http://localhost/lost-and-found/
+🧠 Usage
+Go to the homepage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Register/Login as a user.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Report lost or found items.
 
-### Code Splitting
+Search the item list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Admins can log in to manage posts and users.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📁 Project Structure
+bash
+Copy
+Edit
+📦 lost-and-found/
+├── index.php
+├── login.php
+├── register.php
+├── report_lost.php
+├── report_found.php
+├── search.php
+├── admin/
+│   ├── dashboard.php
+│   └── manage_items.php
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── db/
+│   └── config.php
+└── lost_found.sql
